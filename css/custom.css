@@ -1,8 +1,99 @@
 body {
     background: wheat;
     font-family: "Segoe UI", sans-serif;
+
 }
 
-h1 {
-    margin: 10px;
+.main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.input-number {
+    font-size: 20px;
+    font-weight: bold;
+    width: 200px;
+    height: 50px;
+    text-align: end;
+    border: solid 3px black;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 1px;
+}
+
+.calc-button {
+    background: white;
+    border: solid 2px #c00000;
+    cursor: pointer;
+    outline: none;
+    min-width: 50px;
+    height: 50px;
+    font-size: 25px;
+    content: '';
+}
+
+.calc-button:focus {
+    outline: none;
+}
+
+#calcResult {
+    font-size: 30px;
+}
+
+.calc-button:hover {
+    background: #c00000;
+    transition: .3s;
+}
+
+.calc-button:active {
+    background: darkred;
+    border: darkred solid 2px;
+}
+
+.array-counter {
+    margin-top: 50px;
+}
+
+.array-button {
+    background: white;
+    border: solid 2px green;
+    cursor: pointer;
+    outline: none;
+    min-width: 10px;
+    font-size: 20px;
+    min-height: 50px;
+}
+
+.array-button:hover {
+    background: green;
+    transition: .3s;
+}
+
+.array-button:active {
+    background: darkgreen;
+    border: darkgreen solid 2px;
+}
+
+.array-button:focus {
+    outline: none;
+}
+
+#arrResult {
+    max-width: 320px;
+    margin: auto;
+}
+
+.array-counter > div:first-child {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
 }

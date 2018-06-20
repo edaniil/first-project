@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test page</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+<section class="main">
+    <div class="col-sm-12">
+        <h1>Calculator v0.1</h1>
+    </div>
+    <br>
+    <div class="col-sm-12 calc-body">
+        <div class="calc-string">
+            <input type="number" class="input-number" id="firstInput">
+            <i class="mdi mdi-plus mdi-24px"></i>
+            <input type="number" class="input-number" id="secondInput">
+            <i class="mdi mdi-equal mdi-24px"></i>
+            <div id="calcResult"></div>
+        </div>
+        <button id="calculate" onclick="addNumbers()" class="calc-button mdi mdi-equal"></button>
+    </div>
+    <div class="array-counter">
+        <div>Введите числа массива, добавляя каждое из чисел нажатием кнопки:</div>
+        <input type="number" class="input-number" id="arrayInput">
+        <button class="array-button" onclick="arrAdd()" id="arrayAdd">Добавить число</button>
+        <button class="array-button" onclick="arrShow()" id="arrayShow">Показать строку</button>
+        <div id="arrResult"></div>
+    </div>
+</section>
+    <script src="js/calc.js"></script>
+</body>
+</html>
