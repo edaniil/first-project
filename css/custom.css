@@ -1,6 +1,6 @@
 body {
-    background: wheat;
-    font-family: "Segoe UI", sans-serif;
+    background-image: url(../img/background.jpg);
+    font-family: "Roboto", sans-serif;
 
 }
 
@@ -96,4 +96,133 @@ input[type=number]::-webkit-inner-spin-button {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
+}
+
+.kc-main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.kc-body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+}
+
+.kc-respects-count {
+    background: whitesmoke;
+    margin: 10px auto 0 auto;
+    font-size: 30px;
+    /*border: black 1px solid;*/
+    border-radius: 20px;
+    min-width: 300px;
+    padding-left: 20px;
+    display: inline-block;
+}
+
+.kc-respects-count > span {
+    font-weight: bold;
+    padding: 0 20px;
+    float: right;
+}
+
+.kc-button {
+    background: none;
+    border: none;
+    width: 15%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+}
+
+.kc-button:active,
+.kc-button:focus {
+    outline: none;
+}
+
+.kc-button > img {
+    width: 100%;
+    height: 100%;
+}
+
+.kc-scale {
+    -webkit-transform: scale(0.94);
+    transform: scale(0.94);
+    width: 10%;
+    /*box-shadow:0 0 0 128px rgba(0, 0, 0, 0.33) inset;*/
+}
+
+#storePanel {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+
+#storePanel > div {
+    padding-left: 64px;
+    cursor: pointer;
+    width: 300px;
+    height: 70px;
+    border: 2px black solid;
+    background: wheat;
+    background-size: 64px 64px;
+    background-repeat: no-repeat;
+}
+
+#storePanel > div > div {
+    font-weight: bold;
+    position: relative;
+    right: 10px;
+    bottom: 12px;
+    font-size: 30px;
+    float: right;
+}
+
+#storePanel > div:hover {
+    background: white;
+    background-size: 64px 64px;
+    background-repeat: no-repeat;
+}
+
+#storePanel > div:active {
+    background: goldenrod;
+    background-size: 64px 64px;
+    background-repeat: no-repeat;
+}
+
+#savePanel {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 100;
+}
+
+#savePanel > h1 {
+    font-size: 20px;
+}
+
+#resetSave {
+    cursor: pointer;
+    /*border: 1px solid black;*/
+    border-radius: 8px;
+    background: wheat;
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+}
+
+#resetSave:hover {
+    background: goldenrod;
+}
+
+#resetSave:active {
+    background: darkgoldenrod;
 }

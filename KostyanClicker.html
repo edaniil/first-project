@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--Костян, я тебя люблю. Это всё для тебя.-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kostyan Clicker</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+<div style="display: flex">
+<div class="kc-respects-count">Респекты <span id="respectsCount"></span></div>
+</div>
+<div class="col-sm-12 kc-body">
+    <button type=button class="kc-button" id="kostyan"><img src="img/god.png" class="god" id="god"></button>
+</div>
+<div id="savePanel">
+    <h1>Kostyan Clicker</h1>
+    <div id="resetSave" onclick="resetSave()">
+        Унизить
+    </div>
+    <div id="allRespects">
+        <!--Респектов за все время:<br>-->
+        <!--<span id="numberOfAllRespects"></span>-->
+    </div>
+    <div>alpha 0.0.2</div>
+</div>
+<div id="storePanel">
+    <div id="buyPivo" onclick="addPivo()" style="background-image:url(img/pivo.png)">
+        <b>Пиво — <span id="pivoPrice"></span> р.</b>
+        <br>Даёт <span id="pivoGives"></span> Р/сек.
+        <div id="pivoAmount"></div>
+    </div>
+    <div id="buyStories" onclick="addStory()" style="background-image:url(img/story.png)">
+        <b>Instagram Stories — <span id="storyPrice"></span> р.</b>
+        <br>Даёт <span id="storyGives"></span> Р/сек.
+        <div id="storyAmount"></div>
+    </div>
+</div>
+</body>
+<script src="js/KostyanClicker.js"></script>
+</html>
